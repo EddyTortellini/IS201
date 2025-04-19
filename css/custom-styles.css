@@ -1,0 +1,168 @@
+/* Custom Stylesheet for the scratch page */
+
+/* Custom background for the entire page */
+.custom-background {
+    background-color: #f0f9f0; /* Light green background */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Custom div styling */
+.custom-div {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TOC container styling */
+.toc-container {
+    background-color: #ffffff;
+    border-left: 4px solid #2a803b; /* Dark green border */
+}
+
+.toc-container h2 {
+    color: #1e6029; /* Dark green text */
+    font-family: 'Lora', serif;
+}
+
+.toc-container ul {
+    padding-left: 20px;
+}
+
+.toc-container a {
+    color: #3d9a50; /* Medium green links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.toc-container a:hover {
+    color: #1e6029; /* Darker green on hover */
+    text-decoration: underline;
+}
+
+/* Hobby content styling */
+.hobby-content {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Custom text styling */
+.custom-text {
+    color: #4b5563;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Hobby title styling */
+.hobby-title {
+    color: #2a803b; /* Dark green titles */
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* Image container styling */
+.image-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.custom-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-caption {
+    font-style: italic;
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+/* Video container styling */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.video-section {
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+/* Back to top styling */
+.back-to-top {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.back-to-top a {
+    display: inline-block;
+    background-color: #2a803b; /* Dark green button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-to-top a:hover {
+    background-color: #1e6029; /* Darker green on hover */
+}
+
+/* Portfolio link styling */
+.portfolio-link {
+    color: #2a803b; /* Dark green link */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.portfolio-link:hover {
+    color: #1e6029; /* Darker green on hover */
+}
+
+.portfolio-link span {
+    margin-top: 5px;
+}
+
+/* Ensure navbar is visible, white, and always on top */
+#mainNav {
+    background-color: #ffffff !important; /* Ensure it's not transparent */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for contrast */
+    z-index: 1030; /* Sit above all other content */
+    width: 100%; /* Ensure full width */
+}
+
+/* Make sure links are visible */
+#mainNav .nav-link,
+#mainNav .navbar-brand {
+    color: #000000 !important;
+}
+
+/* Optional: Highlight on hover/active */
+#mainNav .nav-link:hover,
+#mainNav .nav-link.active {
+    color: #007bff !important;
+}
+
+/* Push down page content so it doesn’t sit behind the fixed navbar */
+body {
+    padding-top: 75px; /* Match or exceed navbar height */
+}
